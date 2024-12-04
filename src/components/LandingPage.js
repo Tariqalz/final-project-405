@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import { useTranslation } from "react-i18next"; 
 import "./LandingPage.css";
 import workoutIcon from "../images/workout-icon.jpeg";
@@ -16,7 +17,7 @@ function LandingPage() {
                 {t('header')} <br /> {t('subheader')} <span className="highlight">MoveIt</span>
             </h1>
             <p>{t('description')}</p>
-            <button className="get-started-btn">{t('getStarted')}</button>
+            <Link to="/signup" className="get-started-btn">{t('getStarted')}</Link>
             <div className="features-section">
                 <h2>{t('trackYour')}</h2>
                 <div className="features-icons">
