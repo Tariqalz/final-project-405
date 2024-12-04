@@ -1,0 +1,88 @@
+.macros-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .macros-title {
+    color: #ffffff;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+  
+  .macros-content {
+    display: flex;
+    gap: 1em;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 85em;
+    box-sizing: border-box;
+  }
+  
+  .macros-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  
+  .macros-details,
+  .calories,
+  .macros-breakdown {
+    background-color: #e0e0e0;
+    box-shadow: 3px 3px 8px black;
+    border-radius: 1em;
+    padding: 1em;
+    box-sizing: border-box;
+  }
+  
+  .macros-right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  
+  .food-search,
+  .food-list {
+    background-color: #e0e0e0;
+    box-shadow: 2px 2px 6px black;
+    border-radius: 1em;
+    padding: 1em;
+    box-sizing: border-box;
+  }
+  
+  .search-bar {
+    display: flex;
+    gap: 0.5em;
+  }
+  
+  .search-bar input {
+    flex: 1;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  .search-button {
+    padding: 10px 15px;
+    background-color: #00bcd4;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .food-list ul {
+    list-style: none;
+    padding: 0.5em;
+  }
+  
+  .food-list li {
+    margin-bottom: 0.7em;
+  }
+  

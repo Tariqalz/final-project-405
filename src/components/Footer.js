@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
         <footer>
-            <p>CPIT-405 | React lab 9</p>
+            <p>MoveIt | Cpit 405</p>
         </footer>
     );
 };

@@ -1,0 +1,14 @@
+.dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 1em;
+    justify-content: space-around;
+    margin-top: 3em;
+  }
+  
+  .dashboard-section {
+    flex-basis: 22%;
+    box-sizing: border-box;
+  }
+  

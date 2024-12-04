@@ -1,16 +1,45 @@
 import { Link } from 'react-router-dom';
-const Nav = () => {
-    return (
-        <header>
-            <nav className="navbar" >
-                <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="about">About</Link></li>
-                </ul>
+import { useTranslation } from 'react-i18next';
+import './Nav.css';
 
-            </nav>
-        </header>
-    )
+function Nav() {
+  const { t, i18n } = useTranslation();
+
+  const toggleLanguage = () => {
+    const newLanguage = i18n.language === 'en' ? 'ar' : 'en';
+    i18n.changeLanguage(newLanguage);
+    document.documentElement.dir = newLanguage === 'ar' ? 'rtl' : 'ltr'; 
+  };
+
+  return (
+    <nav className="nav-bar">
+      <div className="nav-logo">
+        <Link to="/">MoveIt</Link>
+      </div>
+      <ul className="nav-links">
+        <li>
+          <Link to="/dashboard">{t('dashboard')}</Link>
+        </li>
+        <li>
+          <Link to="/workout">{t('workouts')}</Link>
+        </li>
+        <li>
+          <Link to="/nutrition">{t('nutrition')}</Link>
+        </li>
+        <li>
+          <Link to="/measurements">{t('measurements')}</Link>
+        </li>
+        <li>
+          <Link to="/login">{t('login')}</Link>
+        </li>
+        <li>
+          <button onClick={toggleLanguage} aria-label="Toggle Language" className="language-toggle">
+            🌍
+          </button>
+        </li>
+      </ul>
+    </nav>
+  );
 }
 
 export default Nav;

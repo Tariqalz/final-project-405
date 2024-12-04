@@ -1,9 +1,16 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
-import Home from './components/Home';
-import './App.css'
-import RecipeDatails from './components/RecipeDatails'
+import LandingPage from './components/LandingPage';
+import LoginPage from './components/LoginPage';
+import Dashboard from './components/Dashboard';
+import WorkoutPage from './components/WorkoutPage';
+import MacrosPage from './components/MacrosPage';
+import MeasurementsPage from './components/MeasurementsPage';
+import SignupPage from './components/SignupPage';
+import './App.css';
+import './i18n';
+
 
 function App() {
   return (
@@ -12,8 +19,14 @@ function App() {
         <Nav />
         <main>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/recipe-details/:id" element={<RecipeDatails />} />
+            {/* Define routes for each page */}
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/login" element={<LoginPage />} />
+            <Route path="/signup" element={<SignupPage />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/workout" element={<WorkoutPage />} />
+            <Route path="/nutrition" element={<MacrosPage />} />
+            <Route path="/measurements" element={<MeasurementsPage />} />
           </Routes>
         </main>
         <Footer />

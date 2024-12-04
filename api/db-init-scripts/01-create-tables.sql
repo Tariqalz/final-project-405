@@ -1,0 +1,30 @@
+DROP TABLE IF EXISTS "Measurements" CASCADE;
+DROP TABLE IF EXISTS "Workouts" CASCADE;
+DROP TABLE IF EXISTS "Users" CASCADE;
+
+CREATE TABLE IF NOT EXISTS "Users" (
+    "id" SERIAL PRIMARY KEY,
+    "name" VARCHAR(255) NOT NULL,
+    "email" VARCHAR(255) UNIQUE NOT NULL,
+    "password" TEXT NOT NULL,
+    "createdAt" TIMESTAMP NOT NULL,
+    "updatedAt" TIMESTAMP NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS "Workouts" (
+    "id" SERIAL PRIMARY KEY,
+    "name" VARCHAR(255) NOT NULL,
+    "exercises" JSONB NOT NULL,
+    "UserId" INTEGER REFERENCES "Users"("id") ON DELETE CASCADE,
+    "createdAt" TIMESTAMP NOT NULL,
+    "updatedAt" TIMESTAMP NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS "Measurements" (
+    "id" SERIAL PRIMARY KEY,
+    "weight" DECIMAL(5, 2) NOT NULL,
+    "height" DECIMAL(5, 2) NOT NULL,
+    "UserId" INTEGER REFERENCES "Users"("id") ON DELETE CASCADE,
+    "createdAt" TIMESTAMP NOT NULL,
+    "updatedAt" TIMESTAMP NOT NULL
+);
