@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/final-project-405/static/css/main.a1d05d12.css",
+    "main.js": "/final-project-405/static/js/main.b109299a.js",
+    "static/js/453.352f8562.chunk.js": "/final-project-405/static/js/453.352f8562.chunk.js",
+    "static/media/pushups.mp4": "/final-project-405/static/media/pushups.579d57894a1c361db5bb.mp4",
+    "static/media/macros-icon.jpeg": "/final-project-405/static/media/macros-icon.931af2cdca8a165acdcb.jpeg",
+    "static/media/calories-icon.jpeg": "/final-project-405/static/media/calories-icon.ca75a3a27a3c67169f22.jpeg",
+    "static/media/measurements-icon.jpeg": "/final-project-405/static/media/measurements-icon.8512ec6b9a2a3a00e550.jpeg",
+    "static/media/workout-icon.jpeg": "/final-project-405/static/media/workout-icon.023e3a5826af88984724.jpeg",
+    "static/media/progress-icon.jpeg": "/final-project-405/static/media/progress-icon.b74a7842ccd6d994b214.jpeg",
+    "index.html": "/final-project-405/index.html",
+    "main.a1d05d12.css.map": "/final-project-405/static/css/main.a1d05d12.css.map",
+    "main.b109299a.js.map": "/final-project-405/static/js/main.b109299a.js.map",
+    "453.352f8562.chunk.js.map": "/final-project-405/static/js/453.352f8562.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a1d05d12.css",
+    "static/js/main.b109299a.js"
+  ]
+}
